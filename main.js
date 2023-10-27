@@ -33,23 +33,27 @@ console.log(strin.toLowerCase())
 //06 Cut (slice) out the first word of the string using substr() or substring() method
 
 let country = 'Finland'
-console.log(country.substr(3, 4))
+console.log(country.substr(0, 7))
 
 
 let stri = 'JavaScript'
 
-console.log(stri.substring(0,4))
+console.log(stri.substring(0,9))
 
 
 //07 Slice out the phrase Days Of JavaScript from learn Javascript.
 
-var k='learn Javascript'
-console.log(k.slice(4))
+var k='learn JavaScript'
+console.log(k.slice(10))
 
 
 
 
 //08 Check if the string contains a word Script using includes() method
+
+var z="learn JavaScript";
+z.includes("Java");
+console.log(z)
 
 
 
@@ -77,15 +81,21 @@ console.log(d.split(' '))
 
 // 12 Change learn Javascript to 30 Days Of Python using replace() method.
 
-var E = 'learn Javascript to 30 days'
-console.log(E.replace('JavaScript', 'Python'))
+var E = 'learn Javascript to 30 days!';
+var f = E.replace("Javascript", "python");
+console.log(f)
+
+
+let text = "Visit Microsoft!";
+let result = text.replace("Microsoft", "W3Schools");
+console.log(result)
 
 
 
 // 13 What is character at index 15 in 'learn Javascript' string? Use charAt() method.
 
 var g = 'learn Javascript'
-console.log(g.charAt(0)) 
+console.log(g.charAt(8)) 
 
 
 
@@ -100,7 +110,7 @@ console.log(h.charAt(6))
 
 var i = 'learn Javascript'
 
-console.log(i.indexOf('c'))
+console.log(i.indexOf('i'))
 
 
 
@@ -108,13 +118,13 @@ console.log(i.indexOf('c'))
 
 
 var j="learn Javascript"
-console.log(j.lastIndexOf())
+console.log(j.lastIndexOf(''))
 
 // 17 Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
 
 var k="You cannot end a sentence with because because because is a conjunction"
-console.log(k.indexOf())
+console.log(k.indexOf('b'))
 
 
 
@@ -132,8 +142,9 @@ console.log(k.lastIndexOf())
 
 // 20 Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' learn Javascript '.
 
-let st = '   learn Javascript  '
-console.log(st.trim(' '))
+let st = '   learn Javascript  ';
+console.log(st.trim())
+
 
 
 // 21 Use startsWith() method with the string learn Javascript and make the result true
@@ -155,7 +166,7 @@ console.log(j.endsWith('in the world'))
 // 23 Use match() method to find all the a’s in learn Javascript
 
 var l =' learn javascript'
-console.log(l.match())
+console.log(l.match('learn'))
 
 // 24 Use concat() and merge '30 Days of' and 'JavaScript' to a single string, 'learn Javascript'
 
